@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Mobile: 330px x 575px padding & margin 25px
+  Desktop: 390px x 620px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --font-size: 14px;
+}
+
+body {
+  background-color: var(--grey-900);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(90%, 375px);
+  padding: 25px;
+  margin: 0 auto;
+  background-color: var(--grey-800);
+  text-align: center;
+  font-family: "Inter";
+  color: white;
+  border-radius: 10px;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.info {
+  margin: 30px 0;
+}
+
+h2.loc {
+  color: var(--green);
+  font-size: var(--font-size);
+  margin-top: 15px;
+}
+
+p {
+  font-size: var(--font-size);
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: unset;
+  display: block;
+  padding: 15px 0;
+  background-color: var(--grey-700);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+a:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+  transition: 0.5s;
+  cursor: pointer;
+}
